@@ -1,75 +1,59 @@
-# Muhammad Usman Imran — Portfolio
+# Muhammad Usman Imran
 
-Single-page portfolio built with React 19 and Vite, deployed to GitHub Pages.
+Full-stack software engineer based in Pakistan, working remotely with clients in Spain, the UK, and the US. I build the whole product: web apps, mobile apps, desktop software, and the servers behind them.
 
-## Scripts
+**Live portfolio:** [slothdemon451.github.io](https://slothdemon451.github.io)
 
-```bash
-npm run dev      # local dev server
-npm run build    # production build into dist/
-npm run preview  # serve dist/ locally
-npm run lint     # eslint
-npm run deploy   # build + publish dist/ to the gh-pages branch
-```
+## What I do
 
-## Where the content lives
+I take products from an idea to something running in front of customers. Most of my work is end-to-end ownership: architecture, frontend, backend, mobile, deployment, and the ongoing maintenance after launch.
 
-| File | Contents |
-| --- | --- |
-| `src/data/data.json` | Name, title, social links, profile summary, experience, skills, education, certifications |
-| `src/data/projects.json` | Every project, in one list |
-| `public/assets/media/projects/<project-id>/` | Screenshots for that project, one folder per project |
-| `public/assets/media/_unused/` | Images not shown anywhere, kept for later |
-| `public/assets/Muhammad_Usman_Imran_CV.pdf` | Resume linked from the header button |
+- **Web and mobile products** with React, Next.js, React Native, and Node.js, backed by PostgreSQL or MongoDB.
+- **Desktop and point-of-sale systems** with Electron, built offline-first for venues that cannot stop when the internet does.
+- **E-commerce and CMS** on Shopify and WordPress, plus custom storefronts with Redsys, Bizum, and Stripe payments.
+- **AI integrations** with GPT-4, Eleven Labs, and LangGraph, from prompt-to-video pipelines to retrieval over large document sets.
+- **Infrastructure that saves money**: self-hosted mail, CI/CD on a VPS, and integrations that replace per-message or per-seat SaaS fees.
 
-## Adding a project
+## Selected work
 
-1. Append an object to `src/data/projects.json` (leave `images` empty):
+| Project | What it is | Link |
+| --- | --- | --- |
+| ThunderJaw | Offline-first restaurant POS with kitchen display, online ordering, driver app, and sync server | Private |
+| Ali Doner Kebab | Online ordering site and customer app for a restaurant in Madrid, built on ThunderJaw | [alikebabrivas.es](https://alikebabrivas.es) · [Google Play](https://play.google.com/store/apps/details?id=com.alikebabrivas) |
+| CarFig | Automotive marketplace with admin panel, REST API, and iOS and Android apps | [carfig.com](https://carfig.com) · [App Store](https://apps.apple.com/us/app/carfig/id6756115978) · [Google Play](https://play.google.com/store/apps/details?id=com.carfig.buyerapp) |
+| Brothers Mart | B2B packaging store with admin CMS, Redsys payments, MRW shipping, and a wholesale ordering app | [mart.b-brothers.es](https://mart.b-brothers.es) · [App Store](https://apps.apple.com/us/app/brothers-mart/id6783842077) |
+| Nariza | Premium beverage brand site with wholesale catalog and quote requests | [nariza.b-brothers.es](https://nariza.b-brothers.es) |
+| Lingerie Royal, Femme Brazen | Shopify storefronts with custom Liquid work | [lingerieroyal.com](https://lingerieroyal.com) · [femmebrazen.com](https://femmebrazen.com) |
+| Documentrio | AI documentary generator with credit-based subscriptions, built during the BuildSpace cohort | Private |
 
-```json
-{
-  "id": "my-project",
-  "name": "My Project — Short Tagline",
-  "categories": ["fullstack", "mobile"],
-  "featured": false,
-  "description": "One or two sentences shown on the card.",
-  "techStack": ["Next.js", "Node.js"],
-  "images": [],
-  "liveLink": "https://example.com",
-  "details": {
-    "description": "Longer paragraph shown in the detail modal.",
-    "points": [
-      "Lead Phrase: Supporting sentence rendered as a bullet.",
-      "Another Lead: More detail."
-    ]
-  }
-}
-```
+The full list of 30+ projects, with screenshots and write-ups, is on the portfolio site.
 
-2. Create `public/assets/media/projects/my-project/` (the folder name must equal the `id`) and drop the screenshots in, prefixed to set the order:
+## Case studies
 
-```
-01-overview.png
-02-dashboard.png
-03-mobile_checkout.png
-```
+- **Self-hosted business email.** Replaced per-mailbox hosting with mailcow on a VPS, SPF, DKIM, and DMARC, and a reputable relay IP. Around 95% lower recurring cost with unlimited mailboxes.
+- **WhatsApp from the POS.** Receipts, invoices, and account balance updates sent automatically at checkout through a self-hosted WhatsApp Web bridge, with no per-message fee.
 
-3. Run `npm run sync-images`. It fills in every project's `images` array from its folder, sorted by filename, and warns about folders that match no project.
+## Experience
 
-Notes:
+- **Full Stack & Solutions Engineer**, independent, 2022 to present
+- **Full Stack Developer**, CarFig, remote, 2025 to 2026
+- **Full Stack Developer**, ZySoftec, remote, 2025
+- **Cohort Developer**, BuildSpace, 2024
+- **Blockchain Trainer**, Omni Academy, 2023 to 2024
 
-- `id` must be unique. Keep it lowercase with hyphens.
-- `categories` may contain any of `ai`, `fullstack`, `mobile`, `desktop`, `cms`. A project can sit in several tabs. The tab list is defined in `src/lib/projects.js`.
-- `featured: true` puts the project on the home page grid (currently six projects).
-- The first image is the card thumbnail (cropped to 16:9 from the top). Later images only appear in the modal carousel.
-- Export screenshots around 1730 × 1000 px and under 300 KB. Three to five per project is plenty.
-- Captions come from the filename: the order prefix is dropped and underscores become spaces, so `03-mobile_checkout.png` shows as "Mobile Checkout".
-- A project with no folder or an empty folder shows a monogram placeholder.
-- `liveLink` can be `null`. When set, a "Live site" link appears on the card and in the modal.
-- Bullet points split on the first `": "` so the lead phrase renders in bold.
+BS Computer Science, Institute of Space Technology (KICSIT), 2020 to 2024.
 
-## Layout notes
+## Stack
 
-- Design tokens (colours, fonts, gutter) are in `src/index.css` under `:root`. Teal is the primary accent; orange is reserved for the resume button and the active nav marker.
-- Section grid spans are also in `src/index.css`. Experience and Projects sit side by side above 1024px and stack below it.
-- The right-hand dot navigator shows above 1024px; the bottom bar shows at 768px and below. Both are driven by `src/hooks/usePageNav.js`.
+JavaScript, TypeScript, Python, PHP · React, Next.js, React Native, Expo, Electron · Node.js, Express, FastAPI, Laravel · PostgreSQL, MySQL, MongoDB, Redis · Docker, Linux, Cloudflare, GitHub Actions · WordPress, Shopify, Elementor · GPT-4, Eleven Labs, LangGraph, Vertex AI
+
+## Contact
+
+- Email: [usmanimran158@gmail.com](mailto:usmanimran158@gmail.com)
+- Phone: +92 318 1522158
+- LinkedIn: [linkedin.com/in/usman-imran](https://linkedin.com/in/usman-imran)
+- GitHub: [github.com/SlothDemon451](https://github.com/SlothDemon451)
+
+---
+
+This repository holds the source of the portfolio site, a React and Vite app. Notes on adding projects and deploying are in [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md).
