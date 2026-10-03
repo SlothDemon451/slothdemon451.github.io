@@ -1,0 +1,54 @@
+/* =====================
+   CERTIFICATIONS
+   ===================== */
+#certifications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr));
+  gap: 1rem;
+}
+
+.certification-item {
+  padding: 1.1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.certification-item:hover {
+  border-color: var(--teal-line);
+}
+
+.certification-item h4 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  font-family: var(--font-mono);
+  margin-bottom: 0.35rem;
+}
+
+.certification-item p {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.certification-item a {
+  color: var(--teal);
+  border: 1px solid var(--teal-line);
+  padding: 0.4rem 0.9rem;
+  display: inline-block;
+  width: max-content;
+  text-decoration: none;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.certification-item a:hover {
+  background-color: var(--teal);
+  color: var(--bg);
+}

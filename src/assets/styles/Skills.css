@@ -1,0 +1,54 @@
+/* =====================
+   SKILLS — one full-width row per category
+   (chip styles are shared and live in src/index.css)
+   ===================== */
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-row {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 0.75rem 1.5rem;
+  align-items: start;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.skills-row:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.skills-row:last-child {
+  padding-bottom: 0;
+}
+
+.skills-row-label {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--teal);
+  letter-spacing: 0.03em;
+  padding-top: 0.35rem;
+}
+
+.skills-row-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0.8rem 0;
+  }
+  .skills-row-label {
+    padding-top: 0;
+  }
+}

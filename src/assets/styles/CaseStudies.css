@@ -1,0 +1,223 @@
+/* =====================
+   CASE STUDIES — section + cards
+   ===================== */
+.case-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 1.25rem;
+}
+
+.case-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 1.5rem 0;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.case-card:hover {
+  border-color: var(--teal-line);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Headline number */
+.case-card-metric {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.case-card-metric-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--teal);
+}
+
+.case-card-metric-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.case-card-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.case-card-problem {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.case-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-bottom: 0.25rem;
+}
+
+.case-card-footer {
+  margin: 0.5rem -1.5rem 0;
+  padding: 0.6rem 1.5rem;
+  border-top: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.22);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.case-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.case-card-cta svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.2s ease;
+}
+
+.case-card:hover .case-card-cta {
+  color: var(--teal);
+}
+
+.case-card:hover .case-card-cta svg {
+  transform: translateX(3px);
+}
+
+/* =====================
+   CASE STUDY MODAL
+   ===================== */
+.case-modal {
+  z-index: 1100;
+}
+
+.case-modal-content {
+  max-width: 860px;
+}
+
+.case-modal-header {
+  padding: 1.75rem 1.5rem 1.5rem;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.case-modal-context {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  padding-right: 2.5rem;
+}
+
+.case-modal-header h2 {
+  font-family: var(--font-display);
+  color: var(--teal);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  line-height: 1.25;
+  padding-right: 2.5rem;
+}
+
+.case-modal-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.case-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.case-stat--primary {
+  border-color: var(--teal-line);
+  background: var(--teal-soft);
+}
+
+.case-stat-value {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--teal);
+}
+
+.case-stat--primary .case-stat-value {
+  font-size: 1.9rem;
+}
+
+.case-stat-label {
+  font-size: 0.78rem;
+  line-height: 1.35;
+  color: var(--text-muted);
+}
+
+.case-modal-body {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.case-section h3 {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--teal);
+  margin-bottom: 0.5rem;
+}
+
+.case-section p {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.case-section ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.case-section li::marker {
+  color: var(--teal);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+
+@media screen and (min-width: 900px) {
+  .case-modal-header {
+    padding: 2rem 2.25rem 1.75rem;
+  }
+  .case-modal-body {
+    padding: 1.5rem 2.25rem 2.25rem;
+  }
+}

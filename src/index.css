@@ -1,0 +1,346 @@
+/* =====================
+   DESIGN TOKENS
+   ===================== */
+:root {
+  --bg: #0d1117;
+  --bg-elevated: #161b22;
+  --panel: rgba(14, 21, 29, 0.74);
+  --panel-solid: #0e151d;
+  --line: #273341;
+  --line-strong: #3a4a5c;
+
+  --teal: #5fc8d4;
+  --teal-strong: #9ae3ea;
+  --teal-soft: rgba(95, 200, 212, 0.12);
+  --teal-line: rgba(95, 200, 212, 0.4);
+
+  --orange: #ff7a1a;
+  --orange-deep: #e6521c;
+
+  --text: #d8dee7;
+  --text-muted: #9aa8b8;
+  --text-faint: #7b8999;
+
+  --font-display: Orbitron, "Segoe UI", sans-serif;
+  --font-mono: "Space Mono", "Courier New", monospace;
+  --font-body: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --gutter: clamp(1rem, 3vw, 3rem);
+}
+
+/* =====================
+   GLOBAL / RESET
+   ===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+  overflow-wrap: anywhere;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 5px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--teal);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) var(--bg);
+}
+
+/* =====================
+   LAYOUT
+   ===================== */
+.main-container {
+  min-height: 100vh;
+  padding: var(--gutter);
+}
+
+.sub-container {
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+.bg-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  background-image: linear-gradient(to bottom right, var(--bg), var(--bg-elevated));
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.container > section {
+  display: flex;
+  min-width: 0;
+}
+
+.container > section > .hud-panel {
+  width: 100%;
+}
+
+/* =====================
+   SHARED HUD PANEL
+   ===================== */
+.hud-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  min-width: 0;
+}
+
+/* Section titles: ">" prompt style shared by every panel */
+.hud-panel > h3,
+.section-heading > h3 {
+  font-family: var(--font-mono);
+  color: var(--teal);
+  font-size: 1.05rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-heading > h3 {
+  margin-bottom: 0;
+}
+
+.section-heading-meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 640px) {
+  .section-heading-meta {
+    display: none;
+  }
+}
+
+/* =====================
+   SHARED ANIMATION
+   ===================== */
+.animate-slide-in-up {
+  animation: slideInUp 0.7s ease-out var(--delay, 0s) 1 both;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-in-up {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+/* =====================
+   SHARED SKILL TAG
+   ===================== */
+.skill-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  font-size: 0.75rem;
+  line-height: 1.25;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  width: max-content;
+  max-width: 100%;
+}
+
+.skill-tag:hover {
+  border-color: var(--teal-line);
+  color: #fff;
+}
+
+.tech-more {
+  background: var(--teal-soft);
+  border-color: var(--teal-line);
+  color: var(--teal);
+}
+
+/* =====================
+   SHARED SKILL CHIP (icon + label)
+   ===================== */
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid var(--line-strong);
+  color: var(--text);
+  font-size: 0.8rem;
+  line-height: 1.2;
+  padding: 0.38rem 0.7rem 0.38rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.skill-chip:hover {
+  border-color: var(--teal-line);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.skill-chip-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* Image-file icons may be wider than tall (e.g. the Forza symbol) */
+.skill-chip-icon--image {
+  width: auto;
+  max-width: 34px;
+  object-fit: contain;
+}
+
+/* Chips without an icon keep the same left padding as text-only */
+.skill-chip:not(:has(.skill-chip-icon)) {
+  padding-left: 0.7rem;
+}
+
+/* Wordmark logos replace the chip text */
+.skill-chip--wordmark {
+  padding: 0.42rem 0.85rem;
+}
+
+.skill-chip-wordmark {
+  display: block;
+  height: 15px;
+  width: auto;
+}
+
+/* Compact variant for project cards */
+.skill-chip--sm {
+  font-size: 0.72rem;
+  gap: 0.35rem;
+  padding: 0.28rem 0.55rem 0.28rem 0.45rem;
+}
+
+.skill-chip--sm .skill-chip-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.skill-chip--sm:not(:has(.skill-chip-icon)) {
+  padding-left: 0.55rem;
+}
+
+.skill-chip--sm.tech-more {
+  padding-left: 0.55rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-chip {
+    font-size: 0.78rem;
+  }
+}
+
+/* =====================
+   GRID COLUMN SPANS
+   ===================== */
+#profile               { grid-column: span 12; }
+#experience            { grid-column: span 4; }
+#projects              { grid-column: span 8; }
+#case-studies          { grid-column: span 12; }
+#skills-matrix-section { grid-column: span 12; }
+#education             { grid-column: span 4; }
+#certificate           { grid-column: span 8; }
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media screen and (max-width: 1024px) {
+  #experience            { grid-column: span 12; }
+  #projects              { grid-column: span 12; }
+  #education             { grid-column: span 5; }
+  #certificate           { grid-column: span 7; }
+}
+
+@media screen and (max-width: 768px) {
+  #education             { grid-column: span 12; }
+  #certificate           { grid-column: span 12; }
+  .container             { gap: 1.25rem; }
+}

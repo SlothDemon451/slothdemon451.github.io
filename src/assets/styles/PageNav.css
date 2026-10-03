@@ -1,0 +1,81 @@
+/* =====================
+   PAGE NAV — fixed right-side dot navigator
+   ===================== */
+.page-nav {
+  position: fixed;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 800;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.page-nav__group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.page-nav__dot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 0;
+}
+
+.page-nav__dot-pip {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(95, 200, 212, 0.35);
+  border: 1px solid rgba(95, 200, 212, 0.6);
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.page-nav__dot:hover .page-nav__dot-pip {
+  background: var(--teal);
+  border-color: var(--teal);
+  transform: scale(1.4);
+}
+
+.page-nav__dot--active .page-nav__dot-pip {
+  background: var(--orange);
+  border-color: var(--orange);
+  transform: scale(1.4);
+  box-shadow: 0 0 6px rgba(255, 122, 26, 0.6);
+}
+
+/* Label slides in from the dot on hover */
+.page-nav__label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateX(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  order: -1;
+}
+
+.page-nav__dot:hover .page-nav__label,
+.page-nav__dot:focus-visible .page-nav__label {
+  opacity: 1;
+  transform: translateX(0);
+  color: var(--text);
+}
+
+/* Hidden where it would overlap content */
+@media screen and (max-width: 1024px) {
+  .page-nav {
+    display: none;
+  }
+}

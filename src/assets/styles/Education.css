@@ -1,0 +1,78 @@
+/* =====================
+   EDUCATION
+   ===================== */
+#education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-item {
+  min-width: 0;
+}
+
+.education-title {
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.education-institute {
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.education-timeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.education-location::before {
+  content: "·";
+  margin-right: 0.5rem;
+}
+
+.education-grade {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.education-coursework {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.education-coursework-label {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.education-metric-highlight {
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.education-gold-badge {
+  margin-top: 0.5rem;
+  color: var(--teal);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.25rem;
+  padding: 0.15rem 0.7rem;
+  background-color: var(--teal-soft);
+  border: 1px solid var(--teal-line);
+  border-radius: 999px;
+  width: max-content;
+  max-width: 100%;
+}

@@ -1,0 +1,1177 @@
+[
+  {
+    "id": "documentrio-ai-documentary-platform",
+    "name": "Documentrio — AI Documentary Generator",
+    "categories": [
+      "ai"
+    ],
+    "featured": false,
+    "description": "Subscription SaaS that turns a prompt into a narrated documentary: GPT-4 writes the script, Eleven Labs voices it, the video is rendered and stored on S3, and a credit-based plan system meters usage through Stripe.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Python",
+      "GPT-4",
+      "Eleven Labs",
+      "AWS S3",
+      "Stripe",
+      "MongoDB"
+    ],
+    "images": [
+      "assets/media/projects/documentrio-ai-documentary-platform/01-landing_page.png",
+      "assets/media/projects/documentrio-ai-documentary-platform/02-creator_dashboard.png",
+      "assets/media/projects/documentrio-ai-documentary-platform/03-my_collection.png",
+      "assets/media/projects/documentrio-ai-documentary-platform/04-credit_usage_stats.png",
+      "assets/media/projects/documentrio-ai-documentary-platform/05-feature_overview.png",
+      "assets/media/projects/documentrio-ai-documentary-platform/06-subscription_plans.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built during the BuildSpace cohort and shipped as a working product. A creator picks a topic or a prompt preset, Documentrio scripts it, narrates it, assembles the video, and files it in the creator's collection. Plans are credit based, so every render is metered and billed through Stripe.",
+      "points": [
+        "Creator Dashboard: Prompt input with ready-made presets, a My Collection gallery of finished renders, and an account page with monthly credit consumption charts.",
+        "Generation Pipeline: Multi-step orchestration where GPT-4 drafts the narrative, Eleven Labs produces the voiceover, and asynchronous Python workers assemble and render the video.",
+        "Media Storage: Finished videos, audio, and thumbnails stored on AWS S3 and served from the collection page.",
+        "Credits & Billing: Tiered subscription plans with a feature comparison table, Stripe checkout and webhooks, and per-render credit deduction with usage history.",
+        "Marketing Site: Landing page and an About section explaining the script, voiceover, and text-to-video tools, built on the same Next.js app."
+      ]
+    }
+  },
+  {
+    "id": "app-ranker-ai-product-intelligence",
+    "name": "App Ranker — AI Product Intelligence",
+    "categories": [
+      "ai"
+    ],
+    "featured": false,
+    "description": "AI-powered product discovery and semantic ranking platform that automatically ingests Product Hunt software launches, extracts feature vectors via GPT-4o-mini, and surfaces high-intent software matches.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Python",
+      "GPT-4o-mini",
+      "Vector Embeddings",
+      "FastAPI",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "assets/media/projects/app-ranker-ai-product-intelligence/01-product_page.png",
+      "assets/media/projects/app-ranker-ai-product-intelligence/02-product_info.png",
+      "assets/media/projects/app-ranker-ai-product-intelligence/03-product_gallery.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "App Ranker automates software market intelligence by aggregating newly launched products from Product Hunt, enriching data using OpenAI models, and computing semantic similarity vectors for intelligent ranking.",
+      "points": [
+        "Automated Data Scraping: Continuous scraping pipeline aggregating newly launched tech products from Product Hunt.",
+        "LLM Feature Extraction: Utilized GPT-4o-mini to parse unstructured descriptions into structured feature matrices and target demographics.",
+        "Semantic Search: Vector embedding search allowing users to discover software using natural language queries.",
+        "Scalable SaaS: Built with Next.js, FastAPI, and Dockerized deployment with automated task scheduling."
+      ]
+    }
+  },
+  {
+    "id": "carfig-automotive-marketplace-platform",
+    "name": "CarFig — Automotive Marketplace Platform",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": true,
+    "description": "Full-scale automotive marketplace platform spanning consumer web application, centralized admin panel, and cross-platform iOS & Android mobile apps with automated VPS CI/CD pipelines.",
+    "techStack": [
+      "Next.js",
+      "Node.js",
+      "REST API",
+      "Tailwind CSS",
+      "React Native",
+      "Cloudflare",
+      "VPS"
+    ],
+    "images": [
+      "assets/media/projects/carfig-automotive-marketplace-platform/01-homepage.png",
+      "assets/media/projects/carfig-automotive-marketplace-platform/02-search_page.png",
+      "assets/media/projects/carfig-automotive-marketplace-platform/03-market_analysis.png",
+      "assets/media/projects/carfig-automotive-marketplace-platform/04-car_details_page.png",
+      "assets/media/projects/carfig-automotive-marketplace-platform/05-car_details_page_2.png",
+      "assets/media/projects/carfig-automotive-marketplace-platform/06-car_details_page_3.png"
+    ],
+    "liveLink": "https://carfig.com/",
+    "details": {
+      "description": "Engineered and maintained CarFig from initial architectural design through deployment. Led development across consumer marketplace, administrative management portal, RESTful APIs, and cross-platform mobile apps.",
+      "points": [
+        "End-to-End Ownership: Designed and delivered consumer portal, dealer management dashboard, and REST API backend.",
+        "Cross-Platform Mobile: Shipped iOS and Android mobile apps using React Native with native device feature integrations.",
+        "DevOps & VPS CI/CD: Automated deployment workflows using GitHub Actions on self-hosted VPS environments with Cloudflare edge caching."
+      ]
+    },
+    "featuredOrder": 4
+  },
+  {
+    "id": "als-agent-listing-service",
+    "name": "ALS – Agent Listing Service",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Full-scale real estate platform hosting 500,000+ verified agent profiles, featuring property listings, automated Crib Flyer generation, lead management, and real-time chat.",
+    "techStack": [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "REST API",
+      "MongoDB",
+      "WebSockets",
+      "JWT",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "assets/media/projects/als-agent-listing-service/01-homepage.png",
+      "assets/media/projects/als-agent-listing-service/02-calendar_events.png",
+      "assets/media/projects/als-agent-listing-service/03-contracts.png",
+      "assets/media/projects/als-agent-listing-service/04-admin_dashboard.png",
+      "assets/media/projects/als-agent-listing-service/05-properties.png",
+      "assets/media/projects/als-agent-listing-service/06-messenger.png",
+      "assets/media/projects/als-agent-listing-service/07-property_microsite.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "ALS is a comprehensive real estate network connecting over half a million agents across North America. Led both front-end and back-end development to deliver responsive, secure, and real-time experiences.",
+      "points": [
+        "Massive Directory: Scaled platform to house 500,000+ verified agent profiles with sub-second search and location filtering.",
+        "Marketing Automation: Built dynamic Crib Flyer generator that renders branded property PDF and web flyers on the fly.",
+        "Real-Time Messaging: Integrated WebSocket communication for instant agent-client messaging, contract sharing, and lead notifications.",
+        "Granular Admin Control: Built multi-tier administrative panels for profile claiming, verification, and payment plan subscriptions."
+      ]
+    }
+  },
+  {
+    "id": "brothers-mart-e-commerce-b2b-wholesale",
+    "name": "Brothers Mart — B2B Packaging E-Commerce & Admin CMS",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": true,
+    "description": "Wholesale packaging store for restaurants and food businesses in Spain: bilingual Next.js storefront with faceted catalog and bundle offers, Redsys and Bizum payments, automated MRW shipping, and a full admin CMS for products, banners, orders, and settings.",
+    "techStack": [
+      "Next.js",
+      "next-intl",
+      "Express.js",
+      "MongoDB",
+      "Redsys API",
+      "MRW API",
+      "Cloudinary",
+      "Puppeteer",
+      "Radix UI",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/01-homepage_hero.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/02-shop_by_category.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/03-deals_best_sellers.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/04-catalog_filters.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/05-product_page_bundles.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/06-cart_vat_shipping.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/07-account_order_history.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/08-brands_directory.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/09-admin_metrics.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/10-admin_product_builder.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/11-admin_banners_localisation.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/12-admin_display_products.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/13-admin_settings_policies.png",
+      "assets/media/projects/brothers-mart-e-commerce-b2b-wholesale/14-admin_fulfilment.png"
+    ],
+    "liveLink": "https://mart.b-brothers.es",
+    "details": {
+      "description": "Engineered the complete Brothers Mart platform: a customer storefront, a REST API, and an admin panel the client's team uses daily to run the catalog and fulfil orders. The business sells packaging in bulk to restaurants, so the catalog is organised by restaurant type as well as by product category and brand.",
+      "points": [
+        "Storefront: Hero and promotional packaging showcase, shop by category and by restaurant type, discount deals grid, best sellers, a brands directory with search, and a catalog page with multi-faceted filters.",
+        "Product & Cart: Single-item pages with specifications and bundle offers, a cart with VAT calculation and an automatic shipping cost calculator, and a customer account area with order history.",
+        "Payments: Redsys Virtual POS integration with 3D Secure card processing and Bizum instant payments.",
+        "Logistics: MRW shipping integrated over their SOAP API for rates, label generation, and dispatch tracking, with invoices and labels rendered to PDF via Puppeteer.",
+        "Admin CMS: Multi-step product builder with variant settings, display products manager for homepage promotion cards, banner configuration with localisation, general settings and company policies forms, and a fulfilment dashboard for processing orders.",
+        "Analytics & Ops: Store performance metrics, recent orders summary, Cloudinary image pipeline, rate limiting and JWT auth on the API, and transactional email via Nodemailer.",
+        "Bilingual: Spanish and English across the storefront with next-intl, and localised banner content managed from the CMS."
+      ]
+    },
+    "featuredOrder": 3
+  },
+  {
+    "id": "noor-boutique-e-commerce-custom-sdk",
+    "name": "Noor Boutique — E-Commerce & Custom SDK",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Scalable multi-panel e-commerce platform with live order tracking via Socket.IO, driver dispatch, and custom JavaScript SDK for the Plutu Libyan payment gateway.",
+    "techStack": [
+      "Next.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "MongoDB",
+      "Plutu SDK"
+    ],
+    "images": [
+      "assets/media/projects/noor-boutique-e-commerce-custom-sdk/01-nb-web.png",
+      "assets/media/projects/noor-boutique-e-commerce-custom-sdk/02-nb_crm.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Led full-stack engineering of an international fashion e-commerce platform with dedicated portals for customers, administrators, and delivery drivers.",
+      "points": [
+        "Custom Payment Gateway SDK: Reverse-engineered and converted the Plutu PHP payment API into a reusable JavaScript/TypeScript SDK.",
+        "Real-Time Delivery Coordination: Integrated Socket.IO for live driver status updates and real-time customer push notifications.",
+        "State Management: Leveraged Redux for deterministic cart states, multi-currency pricing, and responsive order tracking."
+      ]
+    }
+  },
+  {
+    "id": "web-based-pos-retail-suite",
+    "name": "Web-Based POS & Retail Suite",
+    "categories": [
+      "fullstack",
+      "desktop"
+    ],
+    "featured": false,
+    "description": "Comprehensive web-based Point of Sale system for retail businesses covering sales processing, inventory management, customer credit ledgers with automated deductions, and driver dispatch.",
+    "techStack": [
+      "CodeIgniter (PHP)",
+      "MySQL",
+      "jQuery",
+      "Bootstrap",
+      "Docker",
+      "DomPDF",
+      "ESC/POS"
+    ],
+    "images": [],
+    "liveLink": null,
+    "details": {
+      "description": "Extended and customized an enterprise Point of Sale solution for retail operations, adapting core business logic to support local merchant workflows and regulatory compliance.",
+      "points": [
+        "Full Retail POS: Multiple payment types, barcode scanning, thermal receipt printing, and split-tender billing.",
+        "Customer Credit Ledger: Automated balance tracking, credit limits, recurring deduction schedules, and aging reports.",
+        "Delivery & WhatsApp: Driver assignment module with automatic WhatsApp notification and PDF invoice dispatch to customers.",
+        "Multi-Tax Jurisdiction: Tax-inclusive and tax-exclusive pricing models tailored to distinct regional tax codes."
+      ]
+    }
+  },
+  {
+    "id": "undiscovered-hoops-sports-scouting-platform",
+    "name": "Undiscovered Hoops — Sports Scouting Platform",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Sports recruiting platform connecting basketball players, coaches, and scouts with verified profile dashboards, highlight video streaming, and real-time chat.",
+    "techStack": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "WebSockets",
+      "Cloudinary",
+      "Stripe",
+      "Tailwind CSS",
+      "Bootstrap"
+    ],
+    "images": [
+      "assets/media/projects/undiscovered-hoops-sports-scouting-platform/01-undisc.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built a full-stack recruiting network for student athletes and professional basketball scouts using the MERN stack with real-time communication.",
+      "points": [
+        "Role-Specific Dashboards: Tailored interfaces for players, college coaches, scouts, and platform administrators.",
+        "Media Ingestion: Cloudinary video pipeline for athlete highlight reels and performance footage with adaptive streaming.",
+        "Live Scout Chat: WebSocket-powered messaging allowing verified recruiters to initiate direct conversations with prospects."
+      ]
+    }
+  },
+  {
+    "id": "las-veggies-grocery-delivery-dispatch",
+    "name": "Las Veggies — Grocery Delivery & Dispatch",
+    "categories": [
+      "fullstack",
+      "mobile"
+    ],
+    "featured": false,
+    "description": "On-demand fresh grocery delivery system with customer mobile ordering, real-time driver routing via Google Maps, and centralized inventory management.",
+    "techStack": [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Firebase",
+      "Tailwind CSS",
+      "Google Maps API"
+    ],
+    "images": [
+      "assets/media/projects/las-veggies-grocery-delivery-dispatch/01-les_veggies_app.png",
+      "assets/media/projects/las-veggies-grocery-delivery-dispatch/02-les_veggies_panel.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Developed an on-demand food delivery platform pairing customer mobile ordering with live logistics dispatch and store inventory synchronization.",
+      "points": [
+        "Live Driver Routing: Real-time driver dispatch and order tracking using Google Maps API.",
+        "Inventory Synchronization: Automated stock deduction and low-inventory alerts across grocery SKUs.",
+        "Administrative Control: Live order queue visualizer for kitchen/fulfillment staff to manage packing and dispatch."
+      ]
+    }
+  },
+  {
+    "id": "warenwirtschaft-warehouse-management-system",
+    "name": "Warenwirtschaft — Warehouse Management System",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Full-stack warehouse management system for a German enterprise client, featuring visual inventory analytics, stock movement logging, and role-based staff access.",
+    "techStack": [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "REST API",
+      "MongoDB",
+      "JWT",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "assets/media/projects/warenwirtschaft-warehouse-management-system/01-calendar_dashboard.png",
+      "assets/media/projects/warenwirtschaft-warehouse-management-system/02-goods_entry_status.png",
+      "assets/media/projects/warenwirtschaft-warehouse-management-system/03-goods_audit_creation.png",
+      "assets/media/projects/warenwirtschaft-warehouse-management-system/04-goods_list_view.png",
+      "assets/media/projects/warenwirtschaft-warehouse-management-system/05-login.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built an internal warehouse operations dashboard using the MERN stack, replacing legacy spreadsheet workflows with automated tracking and visual reporting.",
+      "points": [
+        "Goods Movement Tracking: Real-time logging of incoming and outgoing shipments with barcode scanning.",
+        "Visual Reporting: Weekly and monthly inventory turnover analytics and automated restock suggestions.",
+        "Staff Roles: RBAC system separating warehouse floor workers, logistics managers, and executive auditors."
+      ]
+    }
+  },
+  {
+    "id": "mysportia-sports-training-platform-crm",
+    "name": "MySportia — Sports Training Platform & CRM",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "Bespoke sports training website and membership platform with custom PHP onboarding plugins and automated Monday.com CRM workflow integrations.",
+    "techStack": [
+      "WordPress",
+      "Custom PHP Theme",
+      "Custom Plugin",
+      "MySQL",
+      "GraphQL",
+      "Monday.com API"
+    ],
+    "images": [
+      "assets/media/projects/mysportia-sports-training-platform-crm/01-homepage.png",
+      "assets/media/projects/mysportia-sports-training-platform-crm/02-places_view.png",
+      "assets/media/projects/mysportia-sports-training-platform-crm/03-onboarding_1.png",
+      "assets/media/projects/mysportia-sports-training-platform-crm/04-onboarding_2.png",
+      "assets/media/projects/mysportia-sports-training-platform-crm/05-onboarding_3.png",
+      "assets/media/projects/mysportia-sports-training-platform-crm/06-onboarding_4.png",
+      "assets/media/projects/mysportia-sports-training-platform-crm/07-onboarding_5.png",
+      "assets/media/projects/mysportia-sports-training-platform-crm/08-onboarding_summary.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Engineered a custom WordPress web application with bespoke themes and custom plugins, connecting incoming client questionnaires directly to enterprise Monday.com CRM pipelines.",
+      "points": [
+        "Custom Plugin Architecture: Authored custom PHP plugins for athlete assessment and coach matching.",
+        "CRM Automation: GraphQL and REST integration syncing new leads directly into Monday.com boards.",
+        "Performance Optimization: Achieved sub-second page loads and responsive mobile layouts."
+      ]
+    }
+  },
+  {
+    "id": "ascent-immigration-consultancy",
+    "name": "Ascent Immigration — UK Visa Consultancy Website",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "WordPress site for a UK immigration consultancy with visa and service post types, a personal and corporate visa navigator, detailed visa pages with a table-of-contents widget, service packages, testimonials, FAQ, blog, and a contact form with WhatsApp chat.",
+    "techStack": [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "Custom Post Types",
+      "WP Rocket",
+      "WhatsApp Integration"
+    ],
+    "images": [
+      "assets/media/projects/ascent-immigration-consultancy/01-hero_consultation_cta.png",
+      "assets/media/projects/ascent-immigration-consultancy/02-guidance_workflow.png",
+      "assets/media/projects/ascent-immigration-consultancy/03-visa_categories_team.png",
+      "assets/media/projects/ascent-immigration-consultancy/04-uk_visitor_visa_page.png",
+      "assets/media/projects/ascent-immigration-consultancy/05-visa_requirements_toc.png",
+      "assets/media/projects/ascent-immigration-consultancy/06-administrative_review_service.png",
+      "assets/media/projects/ascent-immigration-consultancy/07-service_packages_testimonials.png",
+      "assets/media/projects/ascent-immigration-consultancy/08-contact_form_office.png",
+      "assets/media/projects/ascent-immigration-consultancy/09-company_overview.png"
+    ],
+    "liveLink": "https://www.ascentimmigration.com",
+    "details": {
+      "description": "Built the Ascent Immigration site on WordPress so the firm could publish and maintain dozens of visa and service pages themselves. Visas and services are separate post types with their own templates, grouped under personal and corporate immigration, and every page ends in a consultation call to action.",
+      "points": [
+        "Visa & Service Post Types: Structured content for 80+ visa categories and four service packages, each with a consistent template and category taxonomy.",
+        "Visa Navigator: Personal and corporate tabs on the home page listing family, ancestry, skilled worker, visitor, and other routes with eligibility summaries.",
+        "Long-Form Pages: Visa requirement pages with a sticky table-of-contents widget so applicants can jump between eligibility, documents, fees, and processing times.",
+        "Conversion Path: Four-step guidance workflow, service package grid, client testimonials, FAQ accordion, and a WhatsApp chat widget alongside the contact form.",
+        "Performance & SEO: WP Rocket caching, lazy-loaded media, and Open Graph metadata across visa and article pages."
+      ]
+    }
+  },
+  {
+    "id": "mercy-group-real-estate",
+    "name": "Mercy Group Real Estate",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Interactive real estate portal converted from pixel-perfect Figma designs with dynamic property search, mortgage calculators, and administrative CRUD panel.",
+    "techStack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "MySQL",
+      "PHP",
+      "Bootstrap"
+    ],
+    "images": [
+      "assets/media/projects/mercy-group-real-estate/01-sheddrip.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Developed an engaging real estate platform with interactive search and property valuation tools, backed by a custom PHP/MySQL content management system.",
+      "points": [
+        "Interactive Tools: Integrated financial mortgage calculators and interactive map-based property locators.",
+        "Figma to Code: Flawlessly translated high-fidelity Figma designs into responsive, cross-browser web pages.",
+        "Admin Portal: Full CRUD management interface for agents to upload listings, update pricing, and manage buyer inquiries."
+      ]
+    }
+  },
+  {
+    "id": "thunderjaw-restaurant-pos-kds",
+    "name": "ThunderJaw — Restaurant POS, Online Ordering & Delivery Suite",
+    "categories": [
+      "desktop",
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "End-to-end restaurant platform: an offline-first Electron POS with kitchen display and thermal printer routing, a Next.js ordering storefront with delivery-zone validation, Expo customer and driver apps, an admin panel, and a VPS server that keeps every order in sync.",
+    "techStack": [
+      "Electron",
+      "React",
+      "TypeScript",
+      "Knex.js",
+      "PostgreSQL",
+      "Express.js",
+      "Next.js",
+      "React Native",
+      "Expo",
+      "Google Maps API",
+      "ESC/POS",
+      "i18next"
+    ],
+    "images": [
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/01-add_product_while_taking_order.png",
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/02-configurations.png",
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/03-kitchen_view.png",
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/04-manage_orders.png",
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/05-menu_management.png",
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/06-Reports.png",
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/07-taking_order.png",
+      "assets/media/projects/thunderjaw-restaurant-pos-kds/08-overview.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "ThunderJaw started as a desktop POS for a busy restaurant and grew into a full operations suite built and maintained by one engineer. The POS runs entirely offline on the venue's workstations, the storefront takes web orders, drivers get their own app, and a central server reconciles everything so a customer can watch their order move from the kitchen to their door.",
+      "points": [
+        "Offline-First POS: Electron app with a local database and IPC bridge keeps cashiers taking orders through internet outages. Changes queue locally and flush to the server every 15 seconds with automatic retry.",
+        "Order Lifecycle & Sync: Web orders land on the server as web-pending, the POS polls every 10 seconds, acknowledges them, and every status change (sent to kitchen, ready, out for delivery, delivered) syncs back so the customer's tracking page updates live.",
+        "Kitchen Display System: Dedicated kitchen screen receives tickets the moment a cashier sends them, marks items ready, and hands delivery orders to dispatch.",
+        "Thermal Printer Routing: Products map to specific ESC/POS printers (kitchen, bar, grill), receipts handle split and partial payments, and web tickets print with a W- prefix so staff can tell channels apart.",
+        "Order Types: Dine-in, pickup, and delivery at the counter, web delivery and pickup from the storefront, and platform order types reserved for Glovo and Uber Eats integration.",
+        "Online Storefront: Next.js customer site with menu browsing, checkout, delivery address validation against polygon delivery zones on Google Maps, and an account page with active and past orders.",
+        "Mobile & Driver Apps: Expo React Native apps for customers and for drivers, with GPS location, push notifications, map-based dispatch, and background location tasks for live delivery tracking.",
+        "Admin Panel: Next.js back office for menu, categories, variants, printer assignments, and content, with image compression and a rich-text editor.",
+        "Back Office in the POS: Menu management with drag-and-drop ordering, configurations, staff and delivery person accounts, reports with charts, and Excel export.",
+        "Bilingual: Spanish and English across the POS, storefront, and apps through i18next and shared locale files.",
+        "Deployment: Single installable desktop binary for the venue, VPS-hosted Express and PostgreSQL server with JWT auth, and Knex migrations on both sides to keep schemas in step."
+      ]
+    }
+  },
+  {
+    "id": "carfig-native-mobile-applications",
+    "name": "CarFig Native Mobile Applications",
+    "categories": [
+      "mobile"
+    ],
+    "featured": false,
+    "description": "Production cross-platform mobile apps for automotive buyers and sellers, featuring native camera inspection uploads, real-time push notifications, and vehicle appraisal tools.",
+    "techStack": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "REST API",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "assets/media/projects/carfig-native-mobile-applications/01-mobile_app.png",
+      "assets/media/projects/carfig-native-mobile-applications/02-mobile_app_2.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Engineered and shipped native mobile apps for the CarFig automotive marketplace, taking complete ownership of mobile development from UI implementation to App Store/Play Store deployments.",
+      "points": [
+        "Native Device Integration: High-resolution camera capture with native compression for fast vehicle listing uploads.",
+        "Push Notifications: Background alerts for price drops, new matching listings, and direct buyer inquiries.",
+        "Cross-Platform Release: Handled independent mobile lifecycles across iOS and Android ecosystems."
+      ]
+    },
+    "appStoreLink": "https://apps.apple.com/us/app/carfig/id6756115978",
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.carfig.buyerapp&hl=en"
+  },
+  {
+    "id": "payoutiq-tax-team-payments-onboarding",
+    "name": "PayoutIQ — Tax Team Payments & Onboarding",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Operations platform for tax agencies and preparer teams that replaces manual onboarding with secure invitation links, contract workflows, role-based dashboards, and centralised payout configuration.",
+    "techStack": [
+      "Next.js",
+      "Redux Toolkit",
+      "Shadcn UI",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Nodemailer",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "assets/media/projects/payoutiq-tax-team-payments-onboarding/01-admin_dashboard.png",
+      "assets/media/projects/payoutiq-tax-team-payments-onboarding/02-admin_settings.png",
+      "assets/media/projects/payoutiq-tax-team-payments-onboarding/03-preparer_contract_agreement.png",
+      "assets/media/projects/payoutiq-tax-team-payments-onboarding/04-preparer_onboarding.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built PayoutIQ end to end for accounting firms that onboard seasonal tax preparers. Admins invite team members by email, preparers accept contracts online, and payout splits are configured once instead of being negotiated per hire.",
+      "points": [
+        "Token Onboarding: Secure invitation links with Pending and Onboarded status tracking replace manual contract distribution.",
+        "Contract Workflows: Custom contract text, document upload, acceptance tracking, and downloadable signed copies.",
+        "Role-Based Access: Separate admin, manager, and preparer experiences with conditional rendering and fallback views.",
+        "Security: JWT authentication with email two-factor codes, rate limiting, and a hardened password reset flow.",
+        "White-Labelling: Per-business display name and logo so each firm presents its own brand to preparers."
+      ]
+    }
+  },
+  {
+    "id": "internal-erp-operations-projects-hr",
+    "name": "Internal ERP — Operations, Projects & HR",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Custom ERP that streamlines daily operations with HR, project timeline, task tracking, internal communication, and reporting modules under role-based access.",
+    "techStack": [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "MongoDB",
+      "Tailwind CSS"
+    ],
+    "images": [
+      "assets/media/projects/internal-erp-operations-projects-hr/01-admin_dashboard.png",
+      "assets/media/projects/internal-erp-operations-projects-hr/02-users_management.png",
+      "assets/media/projects/internal-erp-operations-projects-hr/03-task_assigning.png",
+      "assets/media/projects/internal-erp-operations-projects-hr/04-task_management.png",
+      "assets/media/projects/internal-erp-operations-projects-hr/05-task_view.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Designed and shipped an internal ERP so project managers could assign work, follow progress, and report upward from one place instead of spreadsheets and chat threads.",
+      "points": [
+        "Project Tracking: Timelines, task assignment, and progress monitoring across teams.",
+        "HR Module: Employee records, leave, and attendance tied to the same user directory as projects.",
+        "Reporting: Automated weekly reports and dashboards for leadership visibility.",
+        "Access Control: Role-based permissions separating staff, managers, and administrators."
+      ]
+    }
+  },
+  {
+    "id": "cybenty-cybersecurity-education-platform",
+    "name": "Cybenty — Cybersecurity Education Platform",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Full-stack platform that teaches individuals and organisations about cyber threats with gamified courses, breach-leak lookups, auto-expiring secret sharing, and real-time notifications.",
+    "techStack": [
+      "Next.js",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "Firebase",
+      "JWT",
+      "Speakeasy 2FA",
+      "Chart.js"
+    ],
+    "images": [
+      "assets/media/projects/cybenty-cybersecurity-education-platform/01-cybenty.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built the user-facing app, admin panel, and API for Cybenty. The platform pairs training content with practical tools so learners can check their own exposure while they study.",
+      "points": [
+        "Gamified Learning: Interactive assessments and courses with progress tracking and scoring.",
+        "Leak Detection: Instant lookup of whether an email address appears in known data breaches.",
+        "Secure Sharing: Password-protected secrets that expire automatically after a set time or view count.",
+        "Account Security: Two-factor authentication with authenticator apps, encrypted storage, and real-time Socket.IO alerts.",
+        "Admin Dashboard: Content management, learner tracking, and organisation-level training oversight."
+      ]
+    }
+  },
+  {
+    "id": "lumina-lms-tutor-marketplace",
+    "name": "Lumina — LMS & Tutor Marketplace",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Dual-sided learning platform combining a course catalog, tutor marketplace with subject and language filters, and student analytics such as GPA and attendance tracking.",
+    "techStack": [
+      "Next.js",
+      "Material UI",
+      "React Query",
+      "Express.js",
+      "MongoDB",
+      "Socket.IO",
+      "Stripe",
+      "AWS S3"
+    ],
+    "images": [
+      "assets/media/projects/lumina-lms-tutor-marketplace/01-homepage_course_details.png",
+      "assets/media/projects/lumina-lms-tutor-marketplace/02-class_catalog.png",
+      "assets/media/projects/lumina-lms-tutor-marketplace/03-tutors_available.png",
+      "assets/media/projects/lumina-lms-tutor-marketplace/04-student_profile.png",
+      "assets/media/projects/lumina-lms-tutor-marketplace/05-teacher_profile.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Lumina connects students, independent tutors, and institutions. Students browse and book tutors, follow courses, and watch their own performance, while tutors get a branded profile and scheduling tools.",
+      "points": [
+        "Tutor Marketplace: Filtering by subject, price, and native language with Stripe checkout for bookings.",
+        "Student Analytics: Real-time GPA, attendance, and performance charts on each profile.",
+        "Scheduling: Calendar invites, reminders by email and SMS, and live session notifications over Socket.IO.",
+        "Course Catalog: Dedicated landing pages for technical deep-dives such as Advanced JavaScript and React."
+      ]
+    }
+  },
+  {
+    "id": "clasy-copilot-ai-tool-suite-for-educators",
+    "name": "Clasy Copilot — AI Tool Suite for Educators",
+    "categories": [
+      "ai"
+    ],
+    "featured": false,
+    "description": "Full-stack AI workspace for teachers offering text and image generation, editable canvases, and cloud asset storage, with several models orchestrated behind one dashboard.",
+    "techStack": [
+      "Next.js",
+      "Material UI",
+      "Redux Toolkit",
+      "Firebase",
+      "Azure MSAL",
+      "OpenAI API",
+      "Framer Motion"
+    ],
+    "images": [],
+    "liveLink": null,
+    "details": {
+      "description": "Built the React and Next.js front end for Clasy Copilot, a creator dashboard where educators draft lesson material, generate visuals, and store everything in the cloud.",
+      "points": [
+        "Multi-Model Orchestration: Text and image generation routed to the best model per task under one interface.",
+        "Editable Canvases: Rich-text and image editing with export to PDF.",
+        "Enterprise Sign-In: Microsoft account login through Azure MSAL for school tenants.",
+        "High-Interaction UI: Streaming responses, skeleton states, and keyboard-driven workflows for fast iteration."
+      ]
+    }
+  },
+  {
+    "id": "vortex-studio-ai-startup-landing-page",
+    "name": "Vortex Studio — AI Startup Landing Page",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "Conversion-focused landing page for an AI startup with Apple-style parallax, orchestrated scroll motion, and a mobile-first layout.",
+    "techStack": [
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "images": [
+      "assets/media/projects/vortex-studio-ai-startup-landing-page/01-aifornia.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Designed and built a single-page marketing site where motion carries the story. Sections reveal on scroll, product shots parallax against the background, and every animation is tuned to stay smooth on mid-range phones.",
+      "points": [
+        "Motion Design: Scroll-linked parallax and staged reveals built with Framer Motion.",
+        "Performance: Static generation with lazy-loaded media keeps the page fast despite heavy visuals.",
+        "Conversion Flow: Single call-to-action path with sticky navigation and anchored sections."
+      ]
+    }
+  },
+  {
+    "id": "rentupay-rental-payments-landing-page",
+    "name": "RentUPay — Rental Payments Landing Page",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "Marketing site for a rental payment platform with a dual tenant and landlord narrative, accessible responsive layout, and smooth section transitions.",
+    "techStack": [
+      "Next.js",
+      "React.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ],
+    "images": [
+      "assets/media/projects/rentupay-rental-payments-landing-page/01-rentu_pay.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built the public site for RentUPay with two audiences in mind. Tenants see how to pay and track rent, landlords see how to collect and reconcile, and both reach a sign-up in one click.",
+      "points": [
+        "Dual Narrative: Tabbed hero and feature sections that switch between tenant and landlord stories.",
+        "Accessibility: Keyboard-navigable components, visible focus states, and reduced-motion support.",
+        "Clean Motion: Intersection-observer reveals and Framer Motion transitions without layout shift."
+      ]
+    }
+  },
+  {
+    "id": "sahab-elegance-shopify-streetwear-store",
+    "name": "Sahab Elegance — Shopify Streetwear Store",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "Streetwear storefront on Shopify with custom Liquid sections matched to the brand, theme-level performance tuning, and on-page SEO.",
+    "techStack": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "SEO"
+    ],
+    "images": [],
+    "liveLink": null,
+    "details": {
+      "description": "Customised a Shopify theme for a streetwear label, building bespoke Liquid sections for lookbooks and drops while keeping checkout friction low.",
+      "points": [
+        "Custom Sections: Lookbook grids, drop countdowns, and size guides built as reusable Liquid sections.",
+        "Performance: Trimmed theme scripts and optimised images to improve load times on mobile.",
+        "SEO: Structured product data, meta templates, and collection copy for organic discovery."
+      ]
+    }
+  },
+  {
+    "id": "first-aid-samui-training-website",
+    "name": "First Aid Samui — Training Provider Website",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "Multilingual WordPress site for a first aid training school in Koh Samui, with course packages priced in THB, a package comparison table, trainer profiles, testimonials, and a weekly course calendar.",
+    "techStack": [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "Responsive UI"
+    ],
+    "images": [
+      "assets/media/projects/first-aid-samui-training-website/01-hero_pricing.png",
+      "assets/media/projects/first-aid-samui-training-website/02-team_testimonials.png",
+      "assets/media/projects/first-aid-samui-training-website/03-pricing_comparison_calendar.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built a conversion-focused marketing site for a first aid training provider serving tourists and expats in Thailand. Visitors can compare certification packages, meet the trainers, and book through WhatsApp or the contact form in a few clicks.",
+      "points": [
+        "Package Pricing: Tiered course cards and a full comparison table covering certification, duration, and inclusions for each package.",
+        "Weekly Calendar: A colour-coded course calendar the client updates from the WordPress admin without touching code.",
+        "Trust Signals: Trainer showcase, language badges, and client testimonials placed along the booking path.",
+        "Direct Booking: WhatsApp chat button and enquiry form wired to the client's inbox for fast lead response."
+      ]
+    }
+  },
+  {
+    "id": "gc-works-ai-legal-operations-landing",
+    "name": "GC Works AI — Legal Operations Landing Page",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "WordPress product site for an AI-assisted legal department platform, presenting matter management, AI-driven e-billing, and insurance claims and litigation tracking with clean illustrated sections.",
+    "techStack": [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "Responsive UI"
+    ],
+    "images": [
+      "assets/media/projects/gc-works-ai-legal-operations-landing/01-matter_management.png",
+      "assets/media/projects/gc-works-ai-legal-operations-landing/02-ai_driven_ebilling.png",
+      "assets/media/projects/gc-works-ai-legal-operations-landing/03-insurance_claims_litigation.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Designed and built the marketing site for a corporate counsel software product that runs on Microsoft 365. Each feature area gets its own page with a diagram-first layout so legal teams can scan the workflow at a glance.",
+      "points": [
+        "Feature Pages: Dedicated sections for matter management, e-billing, claims, compliance, and subpoena management with consistent navigation.",
+        "Illustrated Workflows: Three-step e-billing flow and matter category diagrams built as lightweight SVG rather than heavy images.",
+        "Content Control: Headings, copy, and diagram labels are editable from the WordPress admin for the client's marketing team.",
+        "Performance: Minimal plugin footprint and optimised assets for fast load times on a content-heavy site."
+      ]
+    }
+  },
+  {
+    "id": "starlink-tech-recruitment-landing",
+    "name": "Starlink Tech — Sales Closer Recruitment Page",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "High-conversion WordPress recruitment landing page for a London sales team, with a video hero, numbered benefits, an 'Is this you?' qualifier, a four-step application process, and testimonials from current closers.",
+    "techStack": [
+      "WordPress",
+      "Elementor",
+      "PHP",
+      "Responsive UI"
+    ],
+    "images": [
+      "assets/media/projects/starlink-tech-recruitment-landing/01-hero_section.png",
+      "assets/media/projects/starlink-tech-recruitment-landing/02-role_overview_onboarding.png",
+      "assets/media/projects/starlink-tech-recruitment-landing/03-perks_ideal_candidate.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built a single-purpose landing page whose only job is to get qualified candidates to start a video application. The layout moves from the earnings hook through self-qualification to the apply step without side exits.",
+      "points": [
+        "Video Hero: Founder video front and centre with a single apply call to action repeated down the page.",
+        "Self-Qualification: 'Is this you?' checklist and role overview so unsuitable applicants filter themselves out early.",
+        "Application Flow: Four-step 'How to get started' panel leading to the video challenge submission.",
+        "Social Proof: Testimonials from current closers and a photo strip of the team to back up the earnings claim."
+      ]
+    }
+  },
+  {
+    "id": "nariza-premium-beverage-brand",
+    "name": "Nariza — Premium Beverage Brand & Wholesale",
+    "categories": [
+      "cms",
+      "fullstack"
+    ],
+    "featured": true,
+    "description": "Luxury brand site for a Madrid beverage company launching its own sparkling water line, with an animated flavour showcase, brand timeline, distributed-brands wall, filterable wholesale catalog, and a quote form that emails the sales team.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Nodemailer",
+      "Lucide Icons",
+      "VPS Deployment"
+    ],
+    "images": [
+      "assets/media/projects/nariza-premium-beverage-brand/01-flavour_showcase.png",
+      "assets/media/projects/nariza-premium-beverage-brand/02-brand_timeline_partners.png",
+      "assets/media/projects/nariza-premium-beverage-brand/03-wholesale_catalog.png",
+      "assets/media/projects/nariza-premium-beverage-brand/04-brand_story.png",
+      "assets/media/projects/nariza-premium-beverage-brand/05-wholesale_inquiry_form.png"
+    ],
+    "liveLink": "https://nariza.b-brothers.es",
+    "details": {
+      "description": "Designed and built Nariza's brand site from scratch for a distributor moving into its own product line. The home page is a slow, cinematic flavour switcher for the three editions, followed by the company story, the brands they distribute, and a direct path for bars and restaurants to request volume pricing.",
+      "points": [
+        "Flavour Showcase: Framer Motion driven hero that crossfades can artwork, copy, and background tone between Clásico, Limón & Menta, and Granada.",
+        "Brand Timeline: Numbered milestones from the 2023 founding to the upcoming first launch, revealed on scroll.",
+        "Wholesale Catalog: Products page with brand and format filters covering Nariza plus sixteen distributed references.",
+        "Quote Requests: Venue, volume tier, and brands-of-interest form posted to a Next.js route handler that emails the sales inbox through Nodemailer.",
+        "Premium Finish: Restrained typography, dark palette, and large product renders tuned to read as a luxury label rather than a distributor site."
+      ]
+    },
+    "featuredOrder": 1
+  },
+  {
+    "id": "best-chef-bulk-ingredients-site",
+    "name": "Best Chef — Bulk Ingredients Wholesale Site",
+    "categories": [
+      "cms",
+      "fullstack"
+    ],
+    "featured": true,
+    "description": "Marketing site for a HORECA ingredients supplier, with an illustrated hero of floating product elements, core range cards, a company story timeline, testimonials, product catalog, and a contact page with a working enquiry form.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "CSS Animations",
+      "Nodemailer",
+      "VPS Deployment"
+    ],
+    "images": [
+      "assets/media/projects/best-chef-bulk-ingredients-site/01-landing_story_timeline.png",
+      "assets/media/projects/best-chef-bulk-ingredients-site/02-product_catalog.png",
+      "assets/media/projects/best-chef-bulk-ingredients-site/03-story_contact_page.png"
+    ],
+    "liveLink": "https://bestchef.b-brothers.es",
+    "details": {
+      "description": "Built the Best Chef site for a Madrid supplier of bulk oil, mayonnaise, ketchup, and spices to professional kitchens. The brief was warm and food-forward rather than corporate, so the hero is a composed scene of SVG ingredients that drift as the page loads.",
+      "points": [
+        "Illustrated Hero: Layered SVG oil, eggs, lemons, and seeds animated with CSS keyframes, kept lightweight with no animation library.",
+        "Core Ranges: Spec cards for the 25 L seed oil, 10 L mayonnaise, bulk ketchup, and wholesale spices with a single quote call to action.",
+        "Story Timeline: Alternating image and text milestones from the 2023 founding to nationwide distribution.",
+        "Contact Form: Enquiry form handled by a Next.js route handler and delivered to the sales inbox through Nodemailer.",
+        "SEO Setup: Open Graph metadata, sitemap, and robots routes generated by Next.js."
+      ]
+    },
+    "featuredOrder": 6
+  },
+  {
+    "id": "chand-basmati-rice-brand-site",
+    "name": "Chand — Basmati Rice & Flours Brand Site",
+    "categories": [
+      "cms",
+      "fullstack"
+    ],
+    "featured": false,
+    "description": "Bilingual brand site for a rice and flour importer, with lantern-framed hero, field-to-feast process section, product staples, awards, corporate story, product catalog, and a contact page with map and emailed enquiry form.",
+    "techStack": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "CSS Animations",
+      "Nodemailer",
+      "MapLibre GL",
+      "VPS Deployment"
+    ],
+    "images": [
+      "assets/media/projects/chand-basmati-rice-brand-site/01-landing_field_to_feast.png",
+      "assets/media/projects/chand-basmati-rice-brand-site/02-catalog_history.png",
+      "assets/media/projects/chand-basmati-rice-brand-site/03-inquiry_form_location.png"
+    ],
+    "liveLink": "https://chand.b-brothers.es",
+    "details": {
+      "description": "Built the Chand site for a Spanish importer of premium basmati rice, whole wheat atta, and fried chicken flour. The design leans on traditional motifs, lanterns, patterns, and grain illustrations, while staying fast and fully responsive.",
+      "points": [
+        "Traditional Visual Language: Hanging lantern SVGs, pattern borders, and a banner carousel of product renders set the tone without heavy imagery.",
+        "Field to Feast: Three-step harvest, selection, and milling section explaining sourcing to wholesale buyers.",
+        "Story & Awards: Corporate history from 2023 through the 2025 chapati flour launch, plus award and quality badges.",
+        "Contact & Map: MapLibre location map and an enquiry form posted to a Next.js route handler and emailed via Nodemailer.",
+        "Bilingual Metadata: Spanish and English Open Graph locales, sitemap, and robots configuration for European distribution."
+      ]
+    }
+  },
+  {
+    "id": "lingerie-royal-shopify-store",
+    "name": "Lingerie Royal — Premium Lingerie Shopify Store",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "Shopify storefront for a premium lingerie brand with custom Liquid variant pills on product cards, an image marquee hero, sale banner, shop-by-collection grid, wishlist and quick view, filterable collection pages, and a cart with a stock reservation timer.",
+    "techStack": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "CSS",
+      "Theme Customizer",
+      "Shopify Apps"
+    ],
+    "images": [
+      "assets/media/projects/lingerie-royal-shopify-store/01-hero_featured_collections.png",
+      "assets/media/projects/lingerie-royal-shopify-store/02-category_showcase.png",
+      "assets/media/projects/lingerie-royal-shopify-store/03-lifestyle_quick_shop.png",
+      "assets/media/projects/lingerie-royal-shopify-store/04-collection_filters.png",
+      "assets/media/projects/lingerie-royal-shopify-store/05-product_page.png",
+      "assets/media/projects/lingerie-royal-shopify-store/06-cart_reservation_timer.png"
+    ],
+    "liveLink": "https://lingerieroyal.com",
+    "details": {
+      "description": "Customised a Shopify theme into a brand-led storefront for Lingerie Royal. The main custom Liquid work is on the product cards, where size variants render as selectable pills directly in the collection grid, while the rest of the shopping flow keeps friction low from card to checkout.",
+      "points": [
+        "Variant Pills: Custom Liquid on product cards renders each size as a pill, showing availability and letting shoppers pick a size before opening the product.",
+        "Product Cards: Hover image swap, sale badge, wishlist, and quick view without leaving the collection page.",
+        "Home Page: Scrolling product marquee hero, limited-time offer banner, shop-by-collection grid, shop-the-look, and a signature-set feature.",
+        "Collection Pages: Sidebar filters by size, colour, and price with Shopify native filtering.",
+        "Cart Flow: Cart page with a reservation countdown and clear order summary to nudge completion.",
+        "Trust & Conversion: Verified-buyer testimonials, newsletter discount prompt, and trending search terms in the search drawer."
+      ]
+    }
+  },
+  {
+    "id": "femme-brazen-shopify-store",
+    "name": "Femme Brazen — Lingerie & Nightwear Shopify Store",
+    "categories": [
+      "cms"
+    ],
+    "featured": false,
+    "description": "Shopify storefront for a lingerie and nightwear brand with custom Liquid sections across the home page, collection pages with sidebar filters, a product page with express checkout, and a slide-out mini cart with upsell recommendations.",
+    "techStack": [
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+      "CSS",
+      "Theme Customizer",
+      "Shopify Apps"
+    ],
+    "images": [
+      "assets/media/projects/femme-brazen-shopify-store/01-hero_banner.png",
+      "assets/media/projects/femme-brazen-shopify-store/02-collection_highlights.png",
+      "assets/media/projects/femme-brazen-shopify-store/03-feature_popular_products.png",
+      "assets/media/projects/femme-brazen-shopify-store/04-nightwear_collection_filters.png",
+      "assets/media/projects/femme-brazen-shopify-store/05-product_page_express_checkout.png",
+      "assets/media/projects/femme-brazen-shopify-store/06-mini_cart_upsells.png",
+      "assets/media/projects/femme-brazen-shopify-store/07-cart_summary.png",
+      "assets/media/projects/femme-brazen-shopify-store/08-recently_viewed_footer.png"
+    ],
+    "liveLink": "https://femmebrazen.com",
+    "details": {
+      "description": "Built the Femme Brazen storefront on Shopify with a focus on a smooth browse-to-buy path. The home page cycles through three promotional hero slides, leads into collection highlights and best sellers, and every product card gets the shopper to checkout in two clicks.",
+      "points": [
+        "Hero & Highlights: Three-slide promotional hero and a collection highlights grid covering everyday bras, shapewear, nightwear, nursing bras, and lingerie sets.",
+        "Feature Sections: Custom Liquid blocks for the everyday elegance feature, best selling, popular picks, and customer reviews, all editable from the theme customizer.",
+        "Product Page: Image gallery, variant selection, and an express checkout call to action alongside add-to-cart.",
+        "Mini Cart: Slide-out cart drawer with upsell recommendations, plus a full cart page with order summary.",
+        "Retention Touches: Recently viewed products strip, trust badges for shipping, returns, and support, and a search drawer with trending terms."
+      ]
+    }
+  },
+  {
+    "id": "brothers-mart-mobile-app",
+    "name": "Brothers Mart Mobile — Wholesale Ordering App",
+    "categories": [
+      "mobile"
+    ],
+    "featured": false,
+    "description": "Expo React Native app for Brothers Mart's wholesale customers: store discovery, shop by category and brand, saved items, cart and checkout, order details, account settings, and an in-app help desk, backed by the same API as the web store.",
+    "techStack": [
+      "React Native",
+      "Expo",
+      "Expo Router",
+      "Redux Toolkit",
+      "React Query",
+      "Gluestack UI",
+      "TypeScript",
+      "REST API"
+    ],
+    "images": [
+      "assets/media/projects/brothers-mart-mobile-app/01-store_shop_saved.png",
+      "assets/media/projects/brothers-mart-mobile-app/02-product_cart_order.png",
+      "assets/media/projects/brothers-mart-mobile-app/03-brands_account_support.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "Built the iOS and Android companion to the Brothers Mart store so restaurant buyers can reorder packaging from their phone. The app shares the Express API and MongoDB data with the web storefront, so prices, stock, and order history stay in step across channels.",
+      "points": [
+        "Shopping Flow: Store discovery, shop by category and brand, product details with variants, saved items, cart, and checkout.",
+        "Orders & Account: Order details and history, account and settings screens, and a help and support desk inside the app.",
+        "Data Layer: Redux Toolkit for cart and session state, React Query for server data with caching and background refresh.",
+        "Native Touches: Expo Router navigation with bottom tabs, haptics, localisation, and PDF invoice sharing through the device share sheet.",
+        "Release: Built with Expo and shipped to the App Store and Google Play with the client's developer accounts."
+      ]
+    },
+    "appStoreLink": "https://apps.apple.com/us/app/brothers-mart/id6783842077"
+  },
+  {
+    "id": "ali-doner-kebab-online-ordering",
+    "name": "Ali Doner Kebab — Online Ordering Website",
+    "categories": [
+      "fullstack"
+    ],
+    "featured": true,
+    "description": "Next.js ordering site for a kebab restaurant in Rivas, Madrid: menu with dish customisation and ingredient exclusions, set-menu configurator, delivery or pickup checkout with address lookup, live order tracker, Google reviews feed, account with order history, and a support messaging portal.",
+    "techStack": [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Material UI",
+      "Framer Motion",
+      "Express.js",
+      "PostgreSQL",
+      "Google Maps API"
+    ],
+    "images": [
+      "assets/media/projects/ali-doner-kebab-online-ordering/01-homepage_hero.png",
+      "assets/media/projects/ali-doner-kebab-online-ordering/02-featured_items_reviews.png",
+      "assets/media/projects/ali-doner-kebab-online-ordering/03-menu_grid_order_tracker.png",
+      "assets/media/projects/ali-doner-kebab-online-ordering/04-dish_customisation.png",
+      "assets/media/projects/ali-doner-kebab-online-ordering/05-set_menu_configurator.png",
+      "assets/media/projects/ali-doner-kebab-online-ordering/06-order_confirmation.png",
+      "assets/media/projects/ali-doner-kebab-online-ordering/07-account_order_history.png",
+      "assets/media/projects/ali-doner-kebab-online-ordering/08-support_messaging.png"
+    ],
+    "liveLink": "https://alikebabrivas.es",
+    "details": {
+      "description": "The customer-facing web channel of the ThunderJaw restaurant suite, built for Ali Doner Kebab. Orders placed here land on the restaurant's POS within seconds, print in the kitchen, and the customer can watch the status change on their screen without refreshing.",
+      "points": [
+        "Menu & Customisation: Full menu grid by category, dish pages with ingredient exclusions and extras, and a set-menu configurator for combos such as the lahmacun menu with drink selection.",
+        "Checkout: Delivery or pickup selection, delivery address validation against the restaurant's polygon delivery zones on Google Maps, and an order confirmation screen with the delivery estimate.",
+        "Live Tracking: A sidebar order tracker and an account page that poll the server every 30 seconds, so customers see pending, in kitchen, ready, and out for delivery without reloading.",
+        "Trust & Content: Hero with storefront media, featured items, an embedded Google reviews feed, allergens page, FAQ, and about and contact pages.",
+        "Account & Support: Email verification, password reset, order history with reorder, and a support portal with a messaging thread to the restaurant.",
+        "Bilingual: Spanish and English with a language switcher, sharing translation keys with the POS so order statuses read the same in both channels."
+      ]
+    },
+    "featuredOrder": 2
+  },
+  {
+    "id": "ali-doner-kebab-mobile-app",
+    "name": "Ali Doner Kebab — Customer Ordering App",
+    "categories": [
+      "mobile"
+    ],
+    "featured": true,
+    "description": "Expo React Native app for ordering from Ali Doner Kebab: menu and item pages with allergen information, favourites, cart and checkout, delivery or pickup selection, account, and past and active orders with live status.",
+    "techStack": [
+      "React Native",
+      "Expo",
+      "Expo Router",
+      "TypeScript",
+      "React Native Maps",
+      "Expo Notifications",
+      "i18next",
+      "REST API"
+    ],
+    "images": [
+      "assets/media/projects/ali-doner-kebab-mobile-app/01-menu_cart_checkout.png",
+      "assets/media/projects/ali-doner-kebab-mobile-app/02-favourites_account_order_type.png",
+      "assets/media/projects/ali-doner-kebab-mobile-app/03-item_menu_allergens.png",
+      "assets/media/projects/ali-doner-kebab-mobile-app/04-past_active_orders.png"
+    ],
+    "liveLink": null,
+    "details": {
+      "description": "The iOS and Android companion to the ordering website, sharing the same API and order pipeline as the restaurant's POS. Built for repeat customers who want to reorder in a few taps and follow their delivery.",
+      "points": [
+        "Ordering Flow: Menu, item detail with allergen information and customisation, favourites, cart, and checkout with delivery or pickup selection.",
+        "Orders: Past and active orders with live status, and push notifications when the kitchen accepts an order or a driver is on the way.",
+        "Location: Device location and map picker for delivery addresses, validated against the restaurant's delivery zones.",
+        "Native Experience: Expo Router navigation, haptics, secure storage for the session, custom typography, and video in the hero.",
+        "Bilingual: Spanish and English through i18next with the same strings as the web app."
+      ]
+    },
+    "featuredOrder": 5,
+    "playStoreLink": "https://play.google.com/store/apps/details?id=com.alikebabrivas&hl=en"
+  }
+]

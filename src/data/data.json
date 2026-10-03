@@ -1,0 +1,240 @@
+{
+  "personalInfo": {
+    "name": "Muhammad Usman Imran",
+    "title": "Full-Stack Software Engineer",
+    "socialLinks": {
+      "mail": {
+        "url": "mailto:usmanimran158@gmail.com",
+        "label": "Email"
+      },
+      "phone": {
+        "url": "tel:+923181522158",
+        "label": "+92 318 1522158"
+      },
+      "linkedin": {
+        "url": "https://linkedin.com/in/usman-imran",
+        "label": "LinkedIn"
+      },
+      "github": {
+        "url": "https://github.com/SlothDemon451",
+        "label": "GitHub"
+      }
+    }
+  },
+  "summary": {
+    "profile": "Dynamic Full-Stack Software Engineer with extensive expertise in building high-performance, user-centric web, mobile, and desktop applications using <span class=\"highlight\">React</span>, <span class=\"highlight\">Next.js</span>, <span class=\"highlight\">React Native</span>, <span class=\"highlight\">Node.js</span>, and modern database architectures. Proven track record in designing robust local-first system architectures, managing complex technical lifecycles, and collaborating remotely with international clients. Experienced in operational leadership for tech solutions, combining deep technical execution with team recruitment, international project deployment, and cross-functional leadership. Skilled at breaking down complex logic, optimizing hardware-level performance, and delivering clean, scalable, production-ready code."
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institute": "KICSIT Sub Campus Institute of Space Technology",
+      "timeline": "Sep 2020 - Sep 2024",
+      "location": "Islamabad, Pakistan",
+      "award": "Class of 2024",
+      "coursework": [
+        "Data Structures and Algorithms (C++)",
+        "Probability & Statistics in CS (Python)",
+        "Intro to Web Development",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Linear Algebra with Computational Applications (Python)"
+      ]
+    },
+    {
+      "degree": "HSSC (Pre-Engineering)",
+      "institute": "F.G Quaid-e-Azam Degree College, Chaklala Cantt",
+      "timeline": "Aug 2018 - Aug 2020",
+      "location": "Rawalpindi, Pakistan",
+      "coursework": [
+        "Maths",
+        "Chemistry",
+        "Physics",
+        "English"
+      ]
+    },
+    {
+      "degree": "SSC (Biology)",
+      "institute": "The Educators High School, Raja Akram Road Campus",
+      "timeline": "Aug 2016 - Aug 2018",
+      "location": "Rawalpindi, Pakistan",
+      "coursework": [
+        "Maths",
+        "Chemistry",
+        "Physics",
+        "English",
+        "Biology"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages & Core",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "PHP",
+        "C/C++",
+        "SQL",
+        "HTML5",
+        "CSS3"
+      ]
+    },
+    {
+      "category": "Frontend & Mobile",
+      "items": [
+        "React.js",
+        "Next.js",
+        "React Native",
+        "Vite",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Redux.js",
+        "Shadcn UI",
+        "Aceternity UI",
+        "Chakra UI",
+        "Framer Motion",
+        "GSAP"
+      ]
+    },
+    {
+      "category": "Backend & Architectures",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "FastAPI",
+        "REST APIs",
+        "GraphQL",
+        "WebSockets",
+        "Laravel",
+        "CodeIgniter"
+      ]
+    },
+    {
+      "category": "Desktop & Databases",
+      "items": [
+        "Electron.js",
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Firebase",
+        "Redis",
+        "Knex.js",
+        "Docker",
+        "Linux"
+      ]
+    },
+    {
+      "category": "AI, Cloud & DevOps",
+      "items": [
+        "GPT-4 / LLM Integration",
+        "LangGraph",
+        "Vertex AI",
+        "Eleven Labs",
+        "AWS (S3)",
+        "Google Cloud Platform (GCP)",
+        "Cloudflare",
+        "CI/CD (GitHub Actions)",
+        "Stripe",
+        "PayPal",
+        "Redsys 3D APIs"
+      ]
+    },
+    {
+      "category": "CMS & Design Tools",
+      "items": [
+        "WordPress",
+        "Custom Themes & Plugins",
+        "Shopify (Liquid)",
+        "Webflow",
+        "Figma",
+        "Git",
+        "Jupyter"
+      ]
+    },
+    {
+      "category": "Off the Clock",
+      "items": [
+        "Valorant",
+        "Dota 2",
+        "Counter-Strike 2",
+        "Overwatch",
+        "Call of Duty",
+        "Battlefield 6",
+        "Forza Horizon",
+        "GTA V",
+        "Red Dead Redemption 2",
+        "Tekken 8"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Full Stack & Solutions Engineer",
+      "company": "Freelancing / Independent Contractor",
+      "timeline": "Jan 2022 - Present",
+      "description": "Delivered tailored full-stack, mobile, and desktop applications for prominent brands and businesses, including B.Brothers, Chand, Best Chef, Ascent Immigration, Ali Doner Kebab, and Sehab Elegance. Engineered advanced commercial software solutions including high-performance desktop POS systems, custom financing and ledger applications, and interactive self-service kiosk ordering systems. Architected robust e-commerce platforms, custom CMS architectures, and self-hosted cloud/server solutions with corporate email infrastructure."
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Carfig (Remote)",
+      "timeline": "Nov 2025 – June 2026",
+      "description": "Engineered and maintained a full-stack automotive marketplace platform across a consumer-facing website, admin control panel, and RESTful APIs, taking end-to-end ownership from architecture to deployment. Developed and shipped cross-platform mobile applications for iOS and Android using React Native, handling the full mobile development lifecycle independently. Managed and maintained CI/CD pipelines on a self-hosted VPS using GitHub Actions."
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "ZySoftec (Remote)",
+      "timeline": "April 2025 – Nov 2025",
+      "description": "Developed and maintained full stack applications using React, Next.js, FastAPI, PHP, Node.js, GSAP, and Framer Motion, optimizing responsiveness, user experience, and performance across devices. Built and customized WordPress themes, developed custom plugins, and integrated APIs to deliver dynamic, scalable solutions in collaboration with cross-functional teams."
+    },
+    {
+      "title": "Cohort - Full Stack Developer",
+      "company": "BuildSpace (Remote)",
+      "timeline": "Jun 2024 – Jul 2024",
+      "description": "Developed Documentrio, an AI platform that transforms user prompts into documentaries using GPT-4, Eleven Labs, and AWS S3. Submitted weekly updates, feedback, code reviews, engaged with the builder community, and presented live project demos."
+    },
+    {
+      "title": "Blockchain Trainer / Instructor",
+      "company": "Omni Academy (Remote)",
+      "timeline": "Mar 2023 – Mar 2024",
+      "description": "Led all blockchain-related course training and instruction, multiple hands-on workshops, and provided field consultations. Conducted courses via online interactive sessions, including live practical smart contract labs for students."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Blockchain Specialization — Dapps, Platforms, Smart Contracts",
+      "institute": "Coursera",
+      "link": "https://www.coursera.org/account/accomplishments/specialization/ZAEBLW4HKTQE"
+    },
+    {
+      "name": "HTML5 Specialization",
+      "institute": "University of Michigan (Coursera)",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/59C3WT7VMBF4"
+    },
+    {
+      "name": "Graphic Designing — Won 1st Prize at KTECH Event",
+      "institute": "University Competition",
+      "link": "https://linkedin.com/in/usman-imran"
+    },
+    {
+      "name": "Javascript Algorithms and Data Structures",
+      "institute": "FreeCodeCamp",
+      "link": "https://www.freecodecamp.org/certification/fccdc160d59-f4ba-4b24-95e7-5226b799f7da/javascript-algorithms-and-data-structures"
+    },
+    {
+      "name": "Responsive Web Design",
+      "institute": "FreeCodeCamp",
+      "link": "https://www.freecodecamp.org/certification/fccdc160d59-f4ba-4b24-95e7-5226b799f7da/responsive-web-design"
+    },
+    {
+      "name": "Front End Development Libraries",
+      "institute": "FreeCodeCamp",
+      "link": "https://www.freecodecamp.org/certification/fcc-certification/front-end-development-libraries"
+    },
+    {
+      "name": "Back End Development and APIs",
+      "institute": "FreeCodeCamp",
+      "link": "https://www.freecodecamp.org/certification/fccdc160d59-f4ba-4b24-95e7-5226b799f7da/back-end-development-and-apis"
+    }
+  ]
+}

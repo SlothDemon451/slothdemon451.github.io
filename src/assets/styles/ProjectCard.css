@@ -1,0 +1,204 @@
+/* =====================
+   PROJECT CARD
+   ===================== */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--teal-line);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transform: translateY(-2px);
+}
+
+.project-card:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+/* Thumbnail */
+.project-card-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel-solid);
+}
+
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-card-img {
+  transform: scale(1.03);
+}
+
+.project-card-count {
+  position: absolute;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text);
+  background: rgba(13, 17, 23, 0.8);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  backdrop-filter: blur(4px);
+}
+
+/* Placeholder when there is no screenshot */
+.project-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--panel-solid);
+  background-image:
+    linear-gradient(rgba(95, 200, 212, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(95, 200, 212, 0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.project-img-monogram {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 2.75rem;
+  letter-spacing: 0.08em;
+  color: var(--teal);
+  opacity: 0.85;
+}
+
+/* Body */
+.project-card-body {
+  padding: 1.1rem 1.25rem 0.9rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  min-width: 0;
+}
+
+.project-card-title {
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: var(--font-display);
+  line-height: 1.3;
+}
+
+.project-card-desc {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+/* Footer */
+.project-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 2.75rem;
+  padding: 0.4rem 1.25rem;
+  border-top: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.22);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  flex-shrink: 0;
+}
+
+.project-card-cta,
+.project-card-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-card-cta {
+  color: var(--text-muted);
+}
+
+.project-card-cta svg,
+.project-card-live svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.project-card-cta svg {
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover .project-card-cta {
+  color: var(--teal);
+}
+
+.project-card:hover .project-card-cta svg {
+  transform: translateX(3px);
+}
+
+.project-card-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  margin-right: -0.5rem;
+  flex-shrink: 0;
+}
+
+.project-card-live {
+  color: var(--teal);
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* With two or more store links, show icons only to keep the footer on one line */
+.project-card-links:has(a + a) .project-card-live span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.project-card-links:has(a + a) .project-card-live {
+  padding: 0.3rem 0.45rem;
+}
+
+.project-card-links:has(a + a) .project-card-live svg {
+  width: 16px;
+  height: 16px;
+}
+
+.project-card-live:hover {
+  color: var(--teal-strong);
+  background: var(--teal-soft);
+}

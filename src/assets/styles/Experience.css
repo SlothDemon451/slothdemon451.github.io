@@ -1,0 +1,61 @@
+/* =====================
+   EXPERIENCE — vertical timeline
+   ===================== */
+.experience-items {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-left: 1px solid var(--line-strong);
+}
+
+.experience-item {
+  position: relative;
+  min-width: 0;
+}
+
+.experience-marker {
+  position: absolute;
+  left: calc(-1.25rem - 5px);
+  top: 0.3rem;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--panel-solid);
+  border: 2px solid var(--teal);
+}
+
+.experience-item--current .experience-marker {
+  background: var(--teal);
+  box-shadow: 0 0 0 4px var(--teal-soft);
+}
+
+.experience-timeline {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.2;
+  color: var(--text-faint);
+  margin-bottom: 0.3rem;
+}
+
+.experience-role {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  color: #fff;
+}
+
+.experience-institute {
+  color: var(--teal);
+  font-size: 0.85rem;
+  margin: 0.15rem 0 0.5rem;
+}
+
+.experience-description {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.55;
+}

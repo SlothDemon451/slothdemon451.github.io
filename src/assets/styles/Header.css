@@ -1,0 +1,99 @@
+/* =====================
+   HEADER
+   ===================== */
+header {
+  margin-bottom: 2rem;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+}
+
+.header-text {
+  flex: 1 1 18rem;
+  min-width: 0;
+}
+
+#name {
+  font-family: var(--font-display);
+  color: var(--teal);
+  font-size: clamp(1.6rem, 4.2vw, 3.25rem);
+  line-height: 1.05;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+#title {
+  color: var(--text-muted);
+  font-size: clamp(0.95rem, 1.8vw, 1.3rem);
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.hud-panel-social {
+  display: flex;
+  gap: 0.75rem 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hud-panel-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-muted);
+  transition: color 0.15s ease;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.25rem;
+}
+
+.hud-panel-social a:hover {
+  color: var(--teal-strong);
+}
+
+.hud-panel-social a svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--teal);
+  flex-shrink: 0;
+}
+
+.launch-button {
+  margin-left: auto;
+  background: linear-gradient(135deg, var(--orange-deep), var(--orange));
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(255, 122, 26, 0.35);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.launch-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(255, 122, 26, 0.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 640px) {
+  #info {
+    gap: 1.25rem;
+  }
+  .launch-button {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem 1rem;
+  }
+}

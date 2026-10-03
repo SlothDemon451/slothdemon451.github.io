@@ -1,0 +1,272 @@
+{
+  "personalInfo": {
+    "name": "SAQIB ALI SHAH",
+    "title": "SOFTWARE ENGINEER",
+    "socialLinks": {
+      "mail": {
+        "url": "mailto:saqibshah2882@gmail.com",
+        "label": "MAIL"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/saqibshah172",
+        "label": "LINKEDIN"
+      },
+      "github": {
+        "url": "https://github.com/Saqib-002",
+        "label": "GITHUB"
+      }
+    }
+  },
+  "summary": {
+    "profile": "Software Engineer with a proven track record of architecting scalable full-stack systems and high-performance Agentic RAG workflows. Specialized in engineering intelligent infrastructure, such as B2B lead platforms and secure natural language database interfaces, using <span class=\"highlight\">FastAPI</span>, <span class=\"highlight\">React</span>, and <span class=\"highlight\">Gemini Vertex AI</span>. Focused on transforming complex data bottlenecks into production-ready, AI-driven products that deliver measurable cost savings and sub-second performance."
+  },
+  "education": [
+    {
+      "degree": "BS in Computer Science",
+      "institute": "Institute of Space & Technology",
+      "timeline": "2020-2024",
+      "marks": "3.93",
+      "isGpa": true,
+      "total_marks": "4.00",
+      "award": "🏆 GOLD MEDAL"
+    },
+    {
+      "degree": "HSSC (Pre Engineering)",
+      "institute": "KRL Model College For Boys",
+      "timeline": "2018-2020"
+    }
+  ],
+  "skills": [
+    {
+      "category": "LANGUAGES",
+      "items": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "HTML5",
+        "CSS3",
+        "Go",
+        "SQL"
+      ]
+    },
+    {
+      "category": "FRONTEND & Desktop",
+      "items": [
+        "React",
+        "Next.js",
+        "Vite",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Material-UI",
+        "Ant Design",
+        "Redux",
+        "Electron"
+      ]
+    },
+    {
+      "category": "BACKEND & CLOUD",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "Python",
+        "Docker",
+        "SQL",
+        "FastAPI",
+        "Flask",
+        "AWS",
+        "Google Cloud Platform (GCP)"
+      ]
+    },
+    {
+      "category": "AI & MACHINE LEARNING",
+      "items": [
+        "PyTorch",
+        "LangChain",
+        "Gemini Vertex AI",
+        "LangGraph",
+        "Scikit-learn",
+        "RAG Pipelines"
+      ]
+    },
+    {
+      "category": "DATABASES & TOOLS",
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "Supabase",
+        "Weaviate",
+        "Redis",
+        "Pinecone",
+        "Knex.js"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Modern Intelligent Solutions",
+      "timeline": "Jul 2024-Dec 2025",
+      "description": "Architected 'Imagini,' a high-performance B2B leads platform housing millions of records, featuring streaming upload pipelines and a credit-based access system. Engineered a multi-agent RAG framework using LangGraph and Gemini to navigate 1.5M Arabic documents with hierarchical workflows. Developed a secure natural language database interface for SWCC and an RFM-based customer segmentation engine for premium airport services."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Voilabs",
+      "timeline": "Nov 2023 - Feb 2024",
+      "description": "Fine-tuned DONUT transformer models for OCR-free extraction of French bill data, optimizing for mobile via ONNX conversion. Integrated transformer-based ML models into Next.js applications and built robust data processing pipelines using Python, Pandas, and NumPy, improving use-case accuracy by 25%."
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "Ksoft",
+      "timeline": "Aug 2023 - Sep 2023",
+      "description": "Implemented real-time object detection solutions using YOLO. Designed intuitive user interfaces using Figma and contributed to mobile application development using Kotlin."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Generative AI Fundamentals",
+      "institute": "Google",
+      "link": "https://www.skills.google/public_profiles/920e75a0-fc95-4931-b878-2604cf798720/badges/10400886?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share"
+    },
+    {
+      "name": "AI For Everyone",
+      "institute": "Coursera",
+      "link": "https://www.coursera.org/account/accomplishments/certificate/TLMESMBMLRUE"
+    },
+    {
+      "name": "Pandas",
+      "institute": "Kaggle",
+      "link": "https://www.kaggle.com/learn/certification/saqibalishah/pandas"
+    },
+    {
+      "name": "Applied Software Engineering Fundamentals",
+      "institute": "Coursera",
+      "link": "https://www.coursera.org/account/accomplishments/specialization/KJZ1C2AYL3FG"
+    },
+    {
+      "name": "Linear Algebra for Machine Learning and Data Science",
+      "institute": "Coursera",
+      "link": "https://www.coursera.org/account/accomplishments/verify/BRQ99N33TQUE"
+    },
+    {
+      "name": "Calculus for Machine Learning and Data Science",
+      "institute": "Coursera",
+      "link": "https://www.coursera.org/account/accomplishments/verify/9CS2JNDPRLCF"
+    },
+    {
+      "name": "Backend Development & DevOps",
+      "institute": "Boot.dev",
+      "link": "https://www.boot.dev/u/favoritemobile49"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mandumah Multi-Doc Agent",
+      "description": "An agentic RAG system designed to navigate 1.5M Arabic academic documents using a hierarchical meta-agent architecture and graph-based traversal. Optimized for complex linguistic nuances with automated summarization tools.",
+      "techStack": [
+        "LlamaIndex",
+        "Gemini Vertex AI",
+        "FastAPI",
+        "Python",
+        "Docker"
+      ],
+      "images": [
+        "assets/media/MIS/mandumah/intro.png",
+        "assets/media/MIS/mandumah/initial_view.png",
+        "assets/media/MIS/mandumah/chat_sample.png"
+      ],
+      "details": {
+        "description": "This project involved developing an advanced agentic RAG system for a major Saudi Arabian academic platform to navigate a corpus of 1.5 million documents. It focuses on extracting insights from unstructured Arabic textual data using a hierarchical meta-agent architecture.",
+        "points": [
+          "Architecture: Implemented a hierarchical meta-agent using graph-based traversal to orchestrate document-level agents.",
+          "Technical Innovation: Engineered tool-calling mechanisms for real-time Arabic summarization and query answering.",
+          "Scaling: Optimized performance for large-scale Arabic text, handling morphological complexity and right-to-left scripting."
+        ]
+      }
+    },
+    {
+      "name": "High-Scale Email Verification System",
+      "description": "Multi-layered validation pipeline utilizing DNS resolution, SMTP probing, and heuristics to reduce verification costs by 90%. Supports concurrent processing of hundreds of thousands of emails.",
+      "techStack": [
+        "Python (asyncio)",
+        "GCP",
+        "Docker",
+        "Celery",
+        "FastAPI",
+        "Redis"
+      ],
+      "images": [
+        "assets/media/MIS/verifier/dashboard.png",
+        "assets/media/MIS/verifier/verifier.png",
+        "assets/media/MIS/verifier/guesser.png",
+        "assets/media/MIS/verifier/stats.png",
+        "assets/media/MIS/verifier/instancese.png"
+      ],
+      "details": {
+        "description": "Designed as a cost-effective alternative to commercial services, this system processes hundreds of thousands of email addresses with extreme concurrency. It utilizes a multi-layered validation pipeline to ensure high deliverability for large-scale cold outreach campaigns.",
+        "points": [
+          "Cost Efficiency: Built a high-concurrency pipeline that reduced verification costs by 90% compared to commercial services.",
+          "Verification Pipeline: Developed multi-layered checks including DNS resolution, SMTP probing, and deliverability heuristics.",
+          "Scale: Leveraged asynchronous workers and distributed task queues to process hundreds of thousands of emails concurrently.",
+          "Feature Addition: Created an email-guessing module to generate and validate probable corporate email permutations."
+        ]
+      }
+    },
+    {
+      "name": "ThunderJaw Restaurant POS",
+      "description": "Developed a high-performance desktop POS system using Electron and React 19, streamlining restaurant operations through real-time order tracking and kitchen management. I engineered a robust architecture featuring Role-Based Access Control, automated PostgreSQL migrations with Knex.js, and multi-language support.",
+      "techStack": [
+        "Electron",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Knex",
+        "Tailwind CSS",
+        "Shadcn"
+      ],
+      "images": [
+        "assets/media/MIS/thunderJaw_restaurant/add_product_while_taking_order.png",
+        "assets/media/MIS/thunderJaw_restaurant/configurations.png",
+        "assets/media/MIS/thunderJaw_restaurant/kitchen_view.png",
+        "assets/media/MIS/thunderJaw_restaurant/manage_orders.png",
+        "assets/media/MIS/thunderJaw_restaurant/menu_management.png",
+        "assets/media/MIS/thunderJaw_restaurant/Reports.png",
+        "assets/media/MIS/thunderJaw_restaurant/taking_order.png"
+      ],
+      "details": {
+        "description": "ThunderJaw is a high-performance, cross-platform desktop application designed to streamline complex restaurant operations, including real-time order tracking and kitchen management. The system integrates inventory control and financial reporting into a unified interface, bridging the gap between core system logic and the user experience via real-time IPC.",
+        "points": [
+          "System Architecture: Developed a cross-platform desktop application using Electron and React 19, utilizing TypeScript for robust type safety.",
+          "Database Management: Leveraged Knex.js with PostgreSQL to handle advanced relational data, automated migrations, and seeding.",
+          "Security & Access: Implemented a secure authentication system featuring role-based access control (RBAC) to manage worker permissions and logistics.",
+          "Technical Features: Integrated multi-language support (i18next), real-time IPC handlers, and Excel exporting for comprehensive business reporting."
+        ]
+      }
+    },
+    {
+      "name": "B2B Leads Platform (Imagini)",
+      "description": "Architected a scalable platform managing millions of leads, featuring streaming data ingestion and a credit-based access system for B2B users. Optimized database indexing and caching to maintain sub-second search and filtering performance across massive datasets.",
+      "techStack": ["React", "FastAPI", "PostgreSQL", "Redis", "Celery"],
+      "images": [
+        "assets/media/MIS/imagini/admin_dashboard.png",
+        "assets/media/MIS/imagini/admin_data.png",
+        "assets/media/MIS/imagini/admin_data_2.png",
+        "assets/media/MIS/imagini/admin_data_3.png",
+        "assets/media/MIS/imagini/admin_user.png",
+        "assets/media/MIS/imagini/create_new_user.png",
+        "assets/media/MIS/imagini/job_and_activity.png",
+        "assets/media/MIS/imagini/user_details_1.png",
+        "assets/media/MIS/imagini/user_details_2.png",
+        "assets/media/MIS/imagini/user_side.png"
+      ],
+      "details": {
+        "description": "This comprehensive B2B data platform manages millions of professional leads. It features a robust credit-based access system and a high-performance streaming ingestion pipeline.",
+        "points": [
+          "Data Management: Architected a scalable platform hosting millions of professional leads with a focus on the KSA market.",
+          "Performance: Engineered streaming data ingestion and optimized indexing to maintain sub-second search responses.",
+          "Security & Monetization: Designed a secure credit-based access system with granular admin controls and audit trails.",
+          "Full-Stack Development: Built a responsive React dashboard integrated with a high-performance FastAPI backend."
+        ]
+      }
+    }
+  ]
+}
